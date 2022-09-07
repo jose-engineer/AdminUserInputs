@@ -1,9 +1,19 @@
-<mat-list role="list">
+<!-- <mat-list role="list">
   <mat-list-item role="listitem">
     <a href="users/create">Add User Input</a>
   </mat-list-item>
   <mat-list-item role="listitem">
     <a href="users/list">List User Input</a>
   </mat-list-item>
-</mat-list>
+</mat-list> -->
+
+<mat-selection-list [multiple]="false">
+  <mat-list-option>
+    <a href="users/create">Add User Input</a>
+  </mat-list-option>
+  <mat-list-option>
+    <a href="users/list">List User Input</a>
+  </mat-list-option>
+</mat-selection-list>
+
 

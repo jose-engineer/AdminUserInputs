@@ -1,11 +1,13 @@
 <mat-card>
   <mat-card-title>Add User Input</mat-card-title>
   <mat-card-content>
-    <form [formGroup] = "addUserForm" (submit)="createUser2()">
+    <form [formGroup] = "addUserForm" (submit)="createUser()">
       <p>
+        <fa-icon [icon]="faPound"></fa-icon>
         <mat-form-field appearance="outline">
           <mat-label>Main Limit</mat-label>
-          <input matInput placeholder="Main Limit" formControlName="mainLimit">
+          <input matInput placeholder="Main Limit" formControlName="mainLimit"
+          [value]="addUserForm.value['mainLimit']">
           <mat-error *ngIf="addUserForm.controls['mainLimit'].errors &&
           addUserForm.controls['mainLimit'].hasError('min')">
             Numbers greater than 0 only.
@@ -22,6 +24,7 @@
       </p>
 
       <p>
+        <fa-icon [icon]="faPound"></fa-icon>
         <mat-form-field appearance="outline">
           <mat-label>Main Retention</mat-label>
           <input matInput placeholder="Main Retention" formControlName="mainRetention">

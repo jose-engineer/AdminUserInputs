@@ -13,6 +13,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import { UsersRoutingModule } from './users-routing.module';
 import {MatSelectModule} from '@angular/material/select';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatSnackBarModule,
     MatTableModule,
     UsersRoutingModule,
-    MatSelectModule
+    MatSelectModule,
+    FontAwesomeModule
   ],
   exports: [
 

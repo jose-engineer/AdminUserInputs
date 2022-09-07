@@ -3,6 +3,9 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
+import { faCoffee, faPoundSign } from '@fortawesome/free-solid-svg-icons';
+import { Router, RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-add-user',
@@ -12,11 +15,12 @@ import { UserService } from 'src/app/services/user.service';
 export class AddUserComponent implements OnInit {
 
   addUserForm: FormGroup = new FormGroup({});
-  selected: string = 'Simple';
+  faPound = faPoundSign;
 
   constructor(private formBuilder: FormBuilder,
     private userService: UserService,
-    private _snackBar: MatSnackBar) { }
+    private _snackBar: MatSnackBar,
+    private router: Router) { }
 
   ngOnInit(): void {
 
@@ -31,46 +35,33 @@ export class AddUserComponent implements OnInit {
 
   createUser(){
 
-    this.userService.addUser(this.addUserForm.value).subscribe({
-
-      next: () => {
-        this._snackBar.open('User was created with success, thanks', 'Close', {
-          duration: 3000
-        });
-        //console.log('user created')
-      },
-      error: () => {
-        this._snackBar.open('Unable to create', 'Close', {
-          duration: 3000
-        });
-        //console.log('error')
-      }
-
+    this._snackBar.open('Executing calculation, please wait...', 'Close', {
+      duration: 3000
     });
 
-    //console.log(this.addUserForm.value);
+    setTimeout(() => {
+      this.router.navigate(['/users/list']);
+    }
+    , 3000);
+
   }
 
-  createUser2(){
+  // createUser2(){
 
-    this.userService.addUser2(this.addUserForm.value).subscribe({
+  //   this.userService.addUser2(this.addUserForm.value).subscribe({
 
-      next: () => {
-        this._snackBar.open('User was created with success, thanks', 'Close', {
-          duration: 3000
-        });
-        //console.log('user created')
-      },
-      error: () => {
-        this._snackBar.open('Unable to create', 'Close', {
-          duration: 3000
-        });
-        //console.log('error')
-      }
+  //     next: () => {
+  //       this._snackBar.open('User was created with success, thanks', 'Close', {
+  //         duration: 3000
+  //       });
+  //     },
+  //     error: () => {
+  //       this._snackBar.open('Unable to create', 'Close', {
+  //         duration: 3000
+  //       });
+  //     }
 
-    });
-
-    //console.log(this.addUserForm.value);
-  }
+  //   });
+  // }
 
 }
