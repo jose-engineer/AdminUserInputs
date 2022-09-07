@@ -1,27 +1,24 @@
-# AdminApp
+# Developer: JOSE VELAZQUEZ F.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+# AdminUserInputs Angular App
+
+Implement Angular application mock-up with all required inputs, calculation button and table with results.
+
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Install package.json
 
-## Code scaffolding
+Run `ng serve` inside 'AdminApp' folder for a dev server. Navigate to `http://localhost:4200/`. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You get mocked fake data from an user object inside `list-users.component.ts`
 
-## Build
+Alternatively, the app is ready to run a json-server and make calls to get the data through an angular service(`user.service.ts`) if needed. Take a look to db.json file and install json-server: 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+https://github.com/typicode/json-server
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Screenshots:
+![image](https://user-images.githubusercontent.com/50585004/188766514-8c3c109b-f00b-420f-8386-4ad90f817884.png)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/50585004/188766568-5839c5a0-7584-4702-9a3d-9ee9dc48c98f.png)
