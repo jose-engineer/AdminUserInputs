@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "benchmark1": 0.214,
+      "benchmark2": 0.561,
+      "date": "01/22/2017"
+    },
+    {
+      "id": 2,
+      "benchmark1": 0.781,
+      "benchmark2": 1.452,
+      "date": "04/18/2020"
+    },
+    {
+      "id": 3,
+      "benchmark1": 0.451,
+      "benchmark2": 0.852,
+      "date": "02/20/2022"
+    },
+    {
+      "id": 4,
+      "benchmark1": 0.511,
+      "benchmark2": 0.891,
+      "date": "02/22/2022"
+    },
+    {
+      "id": 5,
+      "benchmark1": 0.781,
+      "benchmark2": 0.189,
+      "date": "02/19/2020"
+    },
+    {
+      "id": 6,
+      "benchmark1": 0.892,
+      "benchmark2": 0.245,
+      "date": "02/26/2022"
+    }
+  ]
+}

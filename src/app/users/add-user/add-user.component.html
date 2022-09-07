@@ -1,0 +1,57 @@
+<mat-card>
+  <mat-card-title>Add User Input</mat-card-title>
+  <mat-card-content>
+    <form [formGroup] = "addUserForm" (submit)="createUser2()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Main Limit</mat-label>
+          <input matInput placeholder="Main Limit" formControlName="mainLimit">
+          <mat-error *ngIf="addUserForm.controls['mainLimit'].errors &&
+          addUserForm.controls['mainLimit'].hasError('min')">
+            Numbers greater than 0 only.
+          </mat-error>
+          <mat-error *ngIf="addUserForm.controls['mainLimit'].errors &&
+          addUserForm.controls['mainLimit'].hasError('pattern')">
+            Only numbers allowed.
+          </mat-error>
+          <mat-error *ngIf="addUserForm.controls['mainLimit'].errors &&
+          addUserForm.controls['mainLimit'].hasError('required')">
+            Main Limit is required
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Main Retention</mat-label>
+          <input matInput placeholder="Main Retention" formControlName="mainRetention">
+          <mat-error *ngIf="addUserForm.controls['mainRetention'].errors &&
+          addUserForm.controls['mainRetention'].hasError('min')">
+            Numbers greater than 0 only.
+          </mat-error>
+          <mat-error *ngIf="addUserForm.controls['mainRetention'].errors &&
+          addUserForm.controls['mainRetention'].hasError('pattern')">
+            Only numbers allowed.
+          </mat-error>
+          <mat-error *ngIf="addUserForm.controls['mainRetention'].errors &&
+          addUserForm.controls['mainRetention'].hasError('required')">
+            Main Retention is required
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <mat-select placeholder="Type of Execution" formControlName="executionType">
+              <mat-option value="1">Simple</mat-option>
+              <mat-option value="2">Complex</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </p>
+
+      <button mat-raised-button color="primary" [disabled]="!addUserForm.valid">Trigger Calculation</button>
+
+    </form>
+  </mat-card-content>
+</mat-card>
+
