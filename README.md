@@ -22,3 +22,5 @@ Dialog to input data:
 
 Validations:
 ![image](https://user-images.githubusercontent.com/50585004/188912750-852788fd-fbc8-4d27-a4f4-c09bc9a7dfe4.png)
+
+![image](https://user-images.githubusercontent.com/50585004/188914963-f0eb5fa8-0e48-48d3-9e8c-0b606ac50ab2.png)
