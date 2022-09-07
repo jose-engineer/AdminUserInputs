@@ -11,4 +11,4 @@ Run `ng serve` inside 'AdminApp' folder for a dev server. Navigate to `http://lo
 
 You get mocked fake data from an user object inside list-user component.
 
-Alternativaly, the app is ready to run a json-server and make calls to get the data through an angular service(user-service) if needed. Take a look to db.json file.
+Alternatively, the app is ready to run a json-server and make calls to get the data through an angular service(user-service) if needed. Take a look to db.json file.
