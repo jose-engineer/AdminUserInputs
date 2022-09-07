@@ -5,7 +5,7 @@ import { ListUsersComponent } from './list-users/list-users.component';
 
 const routes: Routes = [
   {path: '', children: [
-                  // {path: '', component: ListUsersComponent},
+                  {path: '', component: ListUsersComponent},
                   {path: 'list', component: ListUsersComponent},
                   {path: 'create', component: AddUserComponent}
   ]}
