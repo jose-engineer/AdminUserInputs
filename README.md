@@ -18,7 +18,11 @@ Alternatively, the app is ready to run a json-server and make calls to get the d
 https://github.com/typicode/json-server
 
 
-Screenshots:
-![image](https://user-images.githubusercontent.com/50585004/188766514-8c3c109b-f00b-420f-8386-4ad90f817884.png)
+Two ways to add user input:
+![image](https://user-images.githubusercontent.com/50585004/188912323-9d4221ae-f071-4d19-9564-59ab5bcd99d6.png)
 
-![image](https://user-images.githubusercontent.com/50585004/188766568-5839c5a0-7584-4702-9a3d-9ee9dc48c98f.png)
+Dialog to input data:
+![image](https://user-images.githubusercontent.com/50585004/188912581-c326c7e4-00b4-4590-b973-72ea7e739889.png)
+
+Validations:
+![image](https://user-images.githubusercontent.com/50585004/188912750-852788fd-fbc8-4d27-a4f4-c09bc9a7dfe4.png)
