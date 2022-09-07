@@ -9,6 +9,6 @@ Implement Angular application mock-up with all required inputs, calculation butt
 
 Run `ng serve` inside 'AdminApp' folder for a dev server. Navigate to `http://localhost:4200/`. 
 
-You get mocked fake data from an user object inside list-user component.
+You get mocked fake data from an user object inside list-users.component.ts
 
-Alternatively, the app is ready to run a json-server and make calls to get the data through an angular service(user-service) if needed. Take a look to db.json file.
+Alternatively, the app is ready to run a json-server and make calls to get the data through an angular service(user.service.ts) if needed. Take a look to db.json file.
